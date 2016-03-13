@@ -1,0 +1,26 @@
+Code Book for Tidy Data Set 
+	
+Variable names are the same as the ones used in the original raw data.  
+
+I read the labels, subject IDs, and activity information for the test and train data sets separately. Then, I did the same thing for
+train data set. I used cbind to create a fully labeled test and train data set. Then, I combined the two files using rbind. 
+
+The data set tidydata has the following variable column labels: 
+c("subject", "tBodyAcc.mean...X", "tBodyAcc.mean...Y", "tBodyAcc.mean...Z","tBodyAcc.std...X", 
+"tBodyAcc.std...Y", "tBodyAcc. std...Z", "tGravityAcc.mean...X", "tGravityAcc.mean...Y","tGravityAcc.mean...Z",
+"tGravityAcc.std...X","tGravityAcc.std...Y", "tGravityAcc.std...Z", "tBodyAccJerk.mean...X", "tBodyAccJerk.mean...Y" , 
+"tBodyAccJerk.mean...Z" ,"tBodyAccJerk.std...X" ,"tBodyAccJerk.std...Y", "tBodyAccJerk.std...Z", "tBodyGyro.mean...X", 
+"tBodyGyro.mean...Y", "tBodyGyro.mean...Z", "tBodyGyro.std...X", "tBodyGyro.std...Y","tBodyGyro.std...Z","tBodyGyroJerk.mean...X", 
+"tBodyGyroJerk.mean...Y", "tBodyGyroJerk.mean...Z","tBodyGyroJerk.std...X", "tBodyGyroJerk.std...Y", "tBodyGyroJerk.std...Z",
+"tBodyAccMag.mean.."  ,"tBodyAccMag.std.." , "tGravityAccMag.mean..","tGravityAccMag.std..", "tBodyAccJerkMag.mean..", 
+"tBodyAccJerkMag.std..", "tBodyGyroMag.mean..", "tBodyGyroMag.std..","tBodyGyroJerkMag.mean..", "tBodyGyroJerkMag.std..", 
+"fBodyAcc.mean...X", "fBodyAcc.mean...Y", "fBodyAcc.mean...Z","fBodyAcc.std...X","fBodyAcc.std...Y","fBodyAcc.std...Z",
+"fBodyAcc.meanFreq...X","fBodyAcc.meanFreq...Y","fBodyAcc.meanFreq...Z","fBodyAccJerk.mean...X","fBodyAccJerk.mean...Y",
+"fBodyAccJerk.mean...Z","fBodyAccJerk.std...X","fBodyAccJerk.std...Y","fBodyAccJerk.std...Z","fBodyAccJerk.meanFreq...X",
+"fBodyAccJerk.meanFreq...Y","fBodyAccJerk.meanFreq...Z","fBodyGyro.mean...X","fBodyGyro.mean...Y","fBodyGyro.mean...Z",
+"fBodyGyro.std...X","fBodyGyro.std...Y","fBodyGyro.std...Z","fBodyGyro.meanFreq...X","fBodyGyro.meanFreq...Y","fBodyGyro.meanFreq...Z",
+"fBodyAccMag.mean..","fBodyAccMag.std..","fBodyAccMag.meanFreq..","fBodyBodyAccJerkMag.mean..","fBodyBodyAccJerkMag.std..",
+"fBodyBodyAccJerkMag.meanFreq..",fBodyBodyGyroMag.mean..","fBodyBodyGyroMag.std..","fBodyBodyGyroMag.meanFreq..",
+"fBodyBodyGyroJerkMag.mean.." ,"fBodyBodyGyroJerkMag.std.." , "fBodyBodyGyroJerkMag.meanFreq..","Activity")
+
+Each column contains the mean value of the variable by subject ID and activity.
